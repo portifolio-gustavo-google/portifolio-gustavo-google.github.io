@@ -1,0 +1,140 @@
+/* @import url("./normalize.css"); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header {
+    padding: 10px;
+    & ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial;
+            font-size: 13px;
+        }
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -135px;
+    & > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    & form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & .actions {
+            display: flex;
+            gap: 12px;
+            & button {
+                border-radius: 4px;
+                color: #3c4043;
+                background-color: #f8f9fa;
+                border: none;
+                width: 141px;
+                height: 36px;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                    border: 1px solid #dadce0;
+                }
+            }
+        }
+        & > div:nth-child(1) {
+            min-width: 584px;
+            height: 48px;
+            margin: 29px;
+            border: #DADCE0 1px solid;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            & > * {
+                min-width: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            & input {
+                border: none;
+                outline: none;
+                flex: 1;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color:  #000000de;
+}
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+    & a {
+        color: #70757A;
+    }
+    & p {
+        padding: 15px;
+        margin: 0;
+        color: #70757a;
+    }
+    & nav {
+        border-top: #DADCE0 1px solid;
+        padding: 15px;
+        & ul {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-family: Arial;
+        font-weight: initial;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    } 
+
+    footer {
+        & nav {
+            display: flex;
+            justify-content: space-between;
+            & ul {
+                display: flex;
+            }
+        }
+    }
+}
