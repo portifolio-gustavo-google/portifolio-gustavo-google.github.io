@@ -108,6 +108,11 @@ main {
         & #hcode {
             display: flex;
             align-items: center;
+            & > div {
+                display: flex;
+                justify-content: flex-end;
+                flex: 1;
+            }
             & img#logo {
                 display: flex;
                 padding-left: 10px;
