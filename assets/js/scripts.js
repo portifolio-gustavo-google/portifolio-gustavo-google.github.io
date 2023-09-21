@@ -10,6 +10,6 @@ menu.addEventListener("click", () => {
 luck.addEventListener("click", () => {
 
     // console.log("Você está com sorte!");
-    location.href = "https://class.hcode.com.br"
+    location.href = "https://www.hcode.com.br"
 
 });
